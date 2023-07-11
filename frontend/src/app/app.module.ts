@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { CreateUpdateComponent } from './components/create-update/create-update.component';
 import { ListComponent } from './components/list/list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-//import { CountryService } from './shared/country.service';
+import { DataService } from './shared/data.service';
 import { FormsModule } from '@angular/forms';
 
 const appRoutes:Routes=[
@@ -28,7 +28,7 @@ const appRoutes:Routes=[
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  //providers: [CountryService],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
